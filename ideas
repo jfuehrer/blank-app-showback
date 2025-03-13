@@ -1,0 +1,82 @@
+1. Cost Model
+The cost model defines how costs are structured and categorized.
+
+Cost Categories
+Infrastructure Costs (Compute, Storage, Networking)
+
+Virtual machines, containers, and serverless functions (e.g., AWS EC2, Azure VMs, Google Compute Engine)
+Object storage, block storage, and backup solutions
+Data egress and inter-cloud transfer fees
+Platform Services
+
+AI/ML services (e.g., SageMaker, Vertex AI, Azure ML)
+HPC (High-Performance Computing) clusters for simulations
+Data ingestion and pipeline tools
+Software & Licensing
+
+Proprietary modeling and simulation tools (e.g., MATLAB, Ansys, Simulink)
+Open-source tools with enterprise support
+Development & Support Costs
+
+DevOps pipelines, CI/CD tools (e.g., GitHub Actions, Jenkins)
+API gateways and integration layers
+Managed Kubernetes and container orchestration
+Security & Compliance
+
+Identity & Access Management (IAM)
+Compliance monitoring tools (e.g., AWS Security Hub, Azure Defender)
+Operational & Management Costs
+
+IT staff, DevOps engineers, cloud architects
+Monitoring and observability tools (Datadog, New Relic)
+2. Showback Model
+The showback model provides transparency by allocating costs to departments, projects, or users without enforcing direct billing.
+
+Key Metrics for Showback
+Usage-Based Cost Allocation
+
+Compute: Hours of CPU/GPU usage per user/project
+Storage: TB stored and retrieved per team
+Network: Data transferred per cloud region
+Per-User/Per-Team Breakdown
+
+Show detailed resource consumption per user or team
+Highlight underutilized resources for optimization
+Tagging & Labeling Strategy
+
+Use cloud-native tagging (e.g., AWS Cost Allocation Tags) to track cost by project
+Optimization Insights
+
+Recommendations for cost savings (e.g., reserved instances, rightsizing)
+Identify inefficient workloads
+Example Showback Report for a Team:
+
+Team	Compute Cost	Storage Cost	Network Cost	Software Licenses	Total Cost
+AI Team	$5,000	$1,200	$800	$3,500	$10,500
+Simulation Team	$6,500	$1,500	$1,000	$4,200	$13,200
+Development Team	$3,200	$800	$500	$2,800	$7,300
+3. Chargeback Model
+The chargeback model enforces cost recovery by billing departments or users for their actual usage.
+
+Chargeback Strategies
+Direct Consumption-Based Billing
+
+Bill based on actual resource usage (e.g., compute, storage, network traffic).
+Subscription Model for Shared Resources
+
+Departments pay a fixed monthly fee for access to shared resources (e.g., common AI/ML tools, HPC clusters).
+Tiered Pricing Model
+
+Tiered charges based on resource consumption (e.g., $0.10 per CPU-hour up to 10,000 hours, $0.08 per CPU-hour beyond that).
+Cost Allocation by Project or Business Unit
+
+Assign costs based on estimated or actual project needs.
+Example Chargeback Table
+Business Unit	Compute (CPU/GPU)	Storage (TB)	Networking (Data Transfer)	Software Licenses	Support Fees	Total Charge
+AI Research	$10,000	$3,000	$2,000	$4,000	$1,500	$20,500
+Simulations	$12,000	$4,500	$3,000	$5,000	$2,000	$26,500
+Software Dev	$7,500	$2,500	$1,500	$3,500	$1,000	$16,000
+Incentives for Cost Efficiency
+Discounts for Prepaid/Reserved Resources (encourages long-term commitments)
+Charge Penalties for Unused Reserved Resources (discourages over-provisioning)
+Showback-First, Then Chargeback Approach (gives teams time to optimize before enforcing chargebacks)
